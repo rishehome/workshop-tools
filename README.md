@@ -1,66 +1,61 @@
-# Rishe CNC Workshop Tools – Free Designs
+# Rishe CNC Workshop Tools
 
-Free tool designs, jigs, fixtures and helpers that we use daily in our CNC workshop.  
-Shared so other makers and small workshops can use them too.
+Free tool designs, jigs, fixtures, and workshop helpers created for practical CNC-workshop use. The designs are created with FreeCAD and shared so makers and small workshops can inspect, fabricate, and adapt them for permitted personal use.
 
-All designs are created with **FreeCAD**.
+## Designs
 
----
+| Design | Description | Source | Exports |
+| --- | --- | --- | --- |
+| [Bit holder](bit-holder/) | Workshop bit-holder design | [FreeCAD source](bit-holder/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/exports/var1-20mmd-with-numbers/) |
 
-## What’s included
+Each design directory contains a short guide describing its files and known assumptions. Use that guide as the starting point before opening or fabricating a model.
 
-This repository contains ready-to-use designs for common workshop tools and fixtures, such as:
+## Quick start
 
-- Tool holders
-- Workholding jigs & fixtures
-- Clamping solutions
-- Measurement helpers
-- Other practical CNC / workshop aids
+1. Open the design-specific README, such as [`bit-holder/README.md`](bit-holder/README.md).
+2. Download the `.FCStd` source if you need to inspect the FreeCAD model, or choose an exported format for your CAD/CAM workflow.
+3. Verify scale, units, dimensions, fit, clearances, and material suitability in your own setup.
+4. Manufacture or print only after completing your own safety and process checks.
 
-Files are provided as FreeCAD source (`.FCStd`) + common export formats where useful.
+The files are reference designs. They are not certified tooling, safety equipment, or a substitute for checking a machine, workholding setup, or material-specific process.
 
----
+## File formats
+
+- `.FCStd`: editable FreeCAD source model.
+- `.FCBak`: FreeCAD backup file; normally not the primary file to distribute or edit.
+- `.step`: neutral CAD exchange format for solid-model workflows.
+- `.stl`: triangulated mesh format, commonly used for slicing and mesh-based workflows.
+- `.obj` and `.mtl`: mesh and material-reference files used together by compatible applications.
+
+Exported files may not preserve the parametric structure of the FreeCAD source. Check the imported model before production use.
+
+## Repository structure
+
+```text
+.
+├── README.md
+├── LICENSE.md
+├── assets/                 # Shared project assets
+└── bit-holder/
+    ├── README.md
+    ├── object.FCStd        # FreeCAD source
+    └── exports/            # Published interchange formats
+```
+
+For repository and export conventions, see [`CONTRIBUTING.md`](CONTRIBUTING.md). Future designs should use [`docs/design-documentation-template.md`](docs/design-documentation-template.md) as their starting point.
 
 ## License
 
-These designs are released under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.
+These designs are released under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license](LICENSE.md).
 
-You are free to:
-- Download and use the files for personal / non-commercial workshop use
-- Share the original files (with attribution)
+You may download, use, and share the original files for permitted non-commercial purposes with attribution. The license does not permit commercial use or distribution of modified versions. Read [`LICENSE.md`](LICENSE.md) before using or sharing the files.
 
-You may **not**:
-- Sell the designs, the files, or physical objects made from them
-- Use them commercially in any way
-- Distribute modified versions
-
-Full license text: see the [LICENSE](LICENSE) file or  
-https://creativecommons.org/licenses/by-nc-nd/4.0/
-
-### Commercial use
-
-If you would like to use these designs commercially (for example selling parts, including them in products, or using them in a paid service), please contact us.  
-We are happy to discuss a commercial license.
-
----
-
-## How to use
-
-1. Download the files you need
-2. Open the `.FCStd` files in FreeCAD (or import the exported formats into your preferred software)
-3. Make any necessary adjustments for your machine / tooling (for personal use only)
-4. Machine / 3D-print / fabricate
-
-Always check fits, clearances and material suitability for your own setup before production use.
-
----
-
+For commercial licensing inquiries, contact info@rishehome.com or open an issue in this repository.
 
 ## Contact
 
-- Open an issue in this repository, or
-- Email: info@rishehome.com
-
----
+Open an issue in this repository for questions, corrections, or improvement proposals. Commercial licensing questions can be sent to info@rishehome.com.
 
 Made with FreeCAD and ☕ by **Rishe**
+
+If you find these designs useful, you can [support us with a coffee](https://buymeacoffee.com/rishe).
