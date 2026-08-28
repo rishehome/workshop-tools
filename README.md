@@ -7,6 +7,7 @@ Free tool designs, jigs, fixtures, and workshop helpers created for practical CN
 | Design | Description | Source | Exports |
 | --- | --- | --- | --- |
 | [Bit holder](bit-holder/) | Workshop bit-holder design | [FreeCAD source](bit-holder/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/exports/var1-20mmd-with-numbers/) |
+| [Round-corner sanding tools](sanding/round-corner-sanding-tools/) | Sanding-tool variants for shaped corners | [FreeCAD source](sanding/round-corner-sanding-tools/object.FCStd) | [4.75 mm corner, 10 mm half-round, 5 mm corner, 3 mm corner](sanding/round-corner-sanding-tools/exports/) |
 
 Each design directory contains a short guide describing its files and known assumptions. Use that guide as the starting point before opening or fabricating a model.
 
@@ -36,10 +37,15 @@ Exported files may not preserve the parametric structure of the FreeCAD source. 
 ├── README.md
 ├── LICENSE.md
 ├── assets/                 # Shared project assets
-└── bit-holder/
+├── bit-holder/
     ├── README.md
     ├── object.FCStd        # FreeCAD source
     └── exports/            # Published interchange formats
+└── sanding/
+    └── round-corner-sanding-tools/
+        ├── README.md
+        ├── object.FCStd    # FreeCAD source
+        └── exports/        # Published interchange formats
 ```
 
 For repository and export conventions, see [`CONTRIBUTING.md`](CONTRIBUTING.md). Future designs should use [`docs/design-documentation-template.md`](docs/design-documentation-template.md) as their starting point.
