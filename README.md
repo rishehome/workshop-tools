@@ -29,8 +29,8 @@ The files are reference designs. They are not certified tooling, safety equipmen
 The separate `freecad-tools` repository contains **Number selected faces**, a
 standalone macro for engraving consecutive numbers into flat label areas.
 If both repositories are checked out beside one another, open the
-[macro guide](../freecad-tools/macros/README.md) or
-[NumberSelectedFaces.FCMacro](../freecad-tools/macros/NumberSelectedFaces.FCMacro)
+[macro guide](../freecad-tools/macros/number-selected-faces/README.md) or
+[NumberSelectedFaces.FCMacro](../freecad-tools/macros/number-selected-faces/NumberSelectedFaces.FCMacro)
 directly. These sibling links require that local checkout layout; the macro is
 not bundled with this repository.
 
