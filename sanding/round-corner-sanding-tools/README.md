@@ -7,7 +7,6 @@ This directory contains the FreeCAD source and published exports for hand tools 
 | Path | Purpose |
 | --- | --- |
 | [`object.FCStd`](object.FCStd) | Editable FreeCAD source model. |
-| [`object.20260828-122322.FCBak`](object.20260828-122322.FCBak) | FreeCAD backup retained as a recovery copy, not the canonical source. |
 | [`exports/var1-corner-4_75mm/`](exports/var1-corner-4_75mm/) | Export package for the 4.75 mm corner variant. |
 | [`exports/var2-half-10mm/`](exports/var2-half-10mm/) | Export package for the 10 mm half-round variant. |
 | [`exports/var3-corner-5mm/`](exports/var3-corner-5mm/) | Export package for the 5 mm corner variant. |

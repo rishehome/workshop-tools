@@ -32,4 +32,4 @@ Use the `.FCStd` file when you need to inspect the design or work with its FreeC
 
 ## Revision notes
 
-The source and exports currently have no formal release or revision metadata. When updating this design, record the change and regenerate the affected exports together with the source, following [`CONTRIBUTING.md`](../CONTRIBUTING.md).
+The source and exports currently have no formal release or revision metadata. When updating this design, record the change and regenerate the affected exports together with the source, following [`CONTRIBUTING.md`](../../CONTRIBUTING.md).
