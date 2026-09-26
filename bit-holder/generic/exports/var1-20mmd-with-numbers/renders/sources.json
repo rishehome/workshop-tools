@@ -1,6 +1,10 @@
 {
   "source": "bit-holder/generic/exports/var1-20mmd-with-numbers/object.step",
   "source_sha256": "cb32466141b898d238978ee67a1c08afb7a8045274dfec485c604aaad896f99d",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
   "blender": "3.4.1",

@@ -1,6 +1,10 @@
 {
   "source": "sanding/sandpaper-holder/object.FCStd",
   "source_sha256": "07f8ae99000193a5ec468481b54fb5901102469bcc27e5b6763a50e54827ba15",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
   "blender": "3.4.1",

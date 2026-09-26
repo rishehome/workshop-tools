@@ -1,6 +1,10 @@
 {
   "source": "sanding/round-corner-sanding-tools/exports/var3-corner-5mm/object.step",
   "source_sha256": "97c3c9760bcf9ad97275db257a3a893dbd8999aa2cfb0fc5fc5cacb619f6915c",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
   "blender": "3.4.1",

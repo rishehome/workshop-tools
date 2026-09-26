@@ -58,9 +58,9 @@
   "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
   "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
   "image_sha256": {
-    "hero": "b13be89b980c9c5e6f9ffa950e6425ababa59dbc55d55084e460b0f4d9cc95be",
-    "detail": "30490f9c53c430d9be9f34b6973531b8e4ec287b3d00272d9f7d6c4438a695a0",
-    "alternate": "30490f9c53c430d9be9f34b6973531b8e4ec287b3d00272d9f7d6c4438a695a0"
+    "hero": "6ba38e164696f71b96b7351318c430175f5108fb2c76d14c57cb8471beef53fb",
+    "detail": "8111afd83303a55862d37e55b9972d8ede048e5726fdee61fda7a1182ea1ce98",
+    "alternate": "8111afd83303a55862d37e55b9972d8ede048e5726fdee61fda7a1182ea1ce98"
   },
   "scale": 1,
   "format": "landscape",

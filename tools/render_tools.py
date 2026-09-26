@@ -13,6 +13,8 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
+from render_orientation import add_orientation_arguments, resolve_orientation, face_vectors
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -64,7 +66,7 @@ def load_mesh(source: Path):
             CAD_METADATA[str(source)] = json.loads(mesh.with_suffix('.json').read_text())
             return load_mesh(mesh)
     if source.suffix.lower() == ".obj":
-        bpy.ops.wm.obj_import(filepath=str(source))
+        bpy.ops.wm.obj_import(filepath=str(source), forward_axis="Y", up_axis="Z")
     elif source.suffix.lower() == ".stl":
         if bpy.app.version >= (4, 0, 0):
             bpy.ops.wm.stl_import(filepath=str(source))
@@ -100,7 +102,7 @@ def apply_finish(objects, color):
         obj.data.materials.append(material)
 
 
-def render_preview(objects, destination: Path, view="three-quarter", source=None):
+def render_preview(objects, destination: Path, view="three-quarter", source=None, orientation=None):
     for obj in list(bpy.context.scene.objects):
         if obj.type in {"CAMERA", "LIGHT"}:
             bpy.data.objects.remove(obj, do_unlink=True)
@@ -109,11 +111,8 @@ def render_preview(objects, destination: Path, view="three-quarter", source=None
     maximum = [max(getattr(v, axis) for v in box) for axis in "xyz"]
     span = max(maximum[i] - minimum[i] for i in range(3)) or 1
     center = [(minimum[i] + maximum[i]) / 2 for i in range(3)]
-    # OBJ exports are imported upright by Blender; STEP/STL bodies lie in XY.
-    flat = source is not None and source.suffix.lower() in {".step", ".stp", ".stl", ".fcstd"}
-    front = Vector((0, 0, 1) if flat else (0, -1, 0))
-    up = Vector((0, 1, 0) if flat else (0, 0, 1))
-    right = up.cross(front)
+    faces = face_vectors(orientation or (resolve_orientation(source) if source else {"top": "+Z", "front": "-Y"}))
+    front, up, right = (Vector(faces[face]) for face in ("front", "top", "right"))
     directions = {"front": front, "side": right, "top": up, "back": -front,
                   "three-quarter": (front * 1.8 + right * 1.3 + up * 0.9).normalized()}
     offset = directions[view]
@@ -191,6 +190,7 @@ def main():
     cli.add_argument('--dry-run', action='store_true')
     cli.add_argument('--device', choices=('auto', 'cpu'), default='auto')
     argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else sys.argv[1:]
+    add_orientation_arguments(cli)
     args = cli.parse_args(argv)
     color = args.color.lstrip('#')
     if not re.fullmatch('[0-9a-fA-F]{6}', color):
@@ -201,8 +201,14 @@ def main():
         cli.error(str(exc))
     if not models:
         cli.error('No workshop models matched')
+    try:
+        orientations = {source: resolve_orientation(source, args.top_axis, args.front_axis, output)
+                        for source, output in models}
+    except ValueError as exc:
+        cli.error(str(exc))
     for source, output in models:
-        print(f'{source.relative_to(ROOT)} -> {output.relative_to(ROOT)}/renders', flush=True)
+        print(f'{source.relative_to(ROOT)} -> {output.relative_to(ROOT)}/renders '
+              f'(top={orientations[source]["top"]}, front={orientations[source]["front"]})', flush=True)
     if args.dry_run:
         return
     global bpy, Vector, USE_GPU
@@ -226,10 +232,11 @@ def main():
         renders = output / 'renders'
         renders.mkdir(parents=True, exist_ok=True)
         for view in VIEWS:
-            render_preview(objects, renders / f'solid-{view}.png', view, source)
+            render_preview(objects, renders / f'solid-{view}.png', view, source, orientations[source])
         (renders / 'sources.json').write_text(json.dumps({
             'source': source.relative_to(ROOT).as_posix(),
             'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+            'orientation': orientations[source],
             'color_srgb': '#' + color.upper(), 'roughness': .52,
             'blender': bpy.app.version_string, 'views': VIEWS,
             'cad': CAD_METADATA.get(str(source)),

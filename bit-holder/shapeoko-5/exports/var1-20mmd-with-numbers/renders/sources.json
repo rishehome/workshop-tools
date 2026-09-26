@@ -1,6 +1,10 @@
 {
   "source": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/object.step",
   "source_sha256": "1162bd625a1a0e5b5a913053e503df3aeee1d82b40dc8b9cdb306806fe2749b3",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
   "blender": "3.4.1",

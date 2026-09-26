@@ -10,6 +10,8 @@ import sys
 import tempfile
 from export_metadata import export_for_path, is_publishable, preferred_assembly, write_model_metadata
 
+from render_orientation import model_orientation
+
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {'.git', 'venv', '.venv', 'node_modules', '__pycache__', 'overview', 'photos', 'renders', 'CAM'}
 
@@ -70,6 +72,7 @@ def generate(export, source=None, axes='xyz', unit='mm', decimals=1, freecad_pyt
     source = source.resolve() if source else find_source(export)
     if not source.is_file() or source.suffix.lower() not in ('.step', '.stp', '.fcstd'):
         raise ValueError(f'Expected an existing STEP, STP or FCStd source: {source}')
+    orientation = model_orientation(export)
     owner = export_for_path(export) or export.resolve()
     runtime = freecad_python or os.environ.get('FREECAD_PYTHON')
     if not runtime:
@@ -92,6 +95,8 @@ def generate(export, source=None, axes='xyz', unit='mm', decimals=1, freecad_pyt
     data = {'source': relative_source,
             'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
             'axes': axes, 'dimensions': dimensions, **facts}
+    if orientation:
+        data["orientation"] = orientation
     return write_model_metadata(export, data)
 
 

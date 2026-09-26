@@ -1,6 +1,10 @@
 {
   "source": "sanding/round-corner-sanding-tools/exports/var2-half-10mm/object.step",
   "source_sha256": "3ebd07beafb2b08cf751836a2cf51c4217c94cfea154a9197d648314a1e94635",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
   "blender": "3.4.1",

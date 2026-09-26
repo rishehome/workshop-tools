@@ -100,3 +100,51 @@ python3 -m unittest discover -s tools -p 'test_*.py'
 Inspect the images after changing CAD, orientation, colors or copy. The source
 template was copied from `products/design-templates/product-overview` on
 2026-09-26; future product-template updates need to be synchronized explicitly.
+
+## Face directions
+
+All source formats default to **top = +Z**, **front = -Y**, and **right = +X**.
+The named axis is the outward direction of that face in source coordinates.
+Positive Z therefore appears upright. OBJ imports preserve source axes too.
+
+Save settings beside the exact source, appending `.render.json` to its full
+filename (for example `object.FCStd.render.json` or `assembly.step.render.json`):
+
+```json
+{
+  "top": "+Z",
+  "front": "-Y"
+}
+```
+
+`top` and `front` accept `+X`, `-X`, `+Y`, `-Y`, `+Z`, or `-Z` and must be
+perpendicular. Omitted fields use the defaults. These two faces determine the
+other four: bottom and back are opposite, and right is top crossed with front.
+The side image shows the right face; the top image has the back toward its upper edge.
+
+Override saved settings for every selected model with `--top-axis=+Z
+--front-axis=-Y` after Blender's `--` separator. Use the equals form for negative
+axes. For a model whose broad front points along +Z and whose top points along
++Y, use `--top-axis=+Y --front-axis=+Z`. Invalid settings also fail in `--dry-run`.
+
+These settings change camera directions only, leaving CAD geometry, measured
+dimensions and GLB placement unchanged. Existing images need regeneration;
+then rebuild any overview cards that use them.
+
+### Orientation in model facts
+
+You can also add an `orientation` field to the model's `model-facts.json`
+(next to its `renders/` directory):
+
+```json
+"orientation": {"top": "+Z", "front": "-Y"}
+```
+
+Products store model facts inside `export.json`, under `models["."]` for an
+export root or `models["parts/<part>"]` for a part. Add the same `orientation`
+field to that model entry. A standalone `model-facts.json` is also read when
+there is no native model-facts entry.
+
+Precedence, per face: command-line override, source `.render.json`, model facts,
+then defaults. Regenerating measurements preserves authored orientation.
+The existing `axes` field controls dimension labels, independently of camera orientation.
