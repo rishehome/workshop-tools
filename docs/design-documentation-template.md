@@ -17,6 +17,14 @@ Short description of what the design is for and the problem it solves.
 
 List each published format and note any files that must remain together, such as OBJ and MTL files.
 
+## Overviews and renders
+
+Embed each variant’s main overview (`overview/product-overview.png`), Instagram
+Story overview (`overview/story/product-overview.png`), and five render views
+from `renders/`. Use paths relative to this design guide. Put the Story image in
+an expandable details block to keep the page concise. For designs without
+exports, images live under `main/object/`. See [visual-assets.md](visual-assets.md).
+
 ## Specifications
 
 Record only verified values and include units.

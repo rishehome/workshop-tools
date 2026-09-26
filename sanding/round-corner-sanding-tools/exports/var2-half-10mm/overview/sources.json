@@ -1,0 +1,71 @@
+{
+  "export": "sanding/round-corner-sanding-tools/exports/var2-half-10mm",
+  "images": {
+    "hero": {
+      "path": "sanding/round-corner-sanding-tools/exports/var2-half-10mm/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "sanding/round-corner-sanding-tools/exports/var2-half-10mm/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "sanding/round-corner-sanding-tools/exports/var2-half-10mm/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 43.29568801169576,
+    "height": 43.29568801169576,
+    "depth": 45.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "config": {
+    "name": "Sanding tool",
+    "category": "Variant 2 / half 10mm",
+    "feature_title": "The details.",
+    "feature_text": "Corner sanding profile.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 43.29568801169576,
+      "height": 43.29568801169576,
+      "depth": 45.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "object.step"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 1.6,
+      "x": 50,
+      "y": 50
+    },
+    "size_text": "43.3 \u00d7 43.3 \u00d7 45.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "2964d61d69cef80276400c11a87ed9b13f1ac1c7386f62783dd9cf6a71e85ce9",
+    "detail": "de452a2b86e41651225e4669a0870b4c00bb14371a5e3d143b1302406856b58c",
+    "alternate": "de452a2b86e41651225e4669a0870b4c00bb14371a5e3d143b1302406856b58c"
+  },
+  "scale": 1,
+  "format": "landscape",
+  "canvas": [
+    1536,
+    1024
+  ]
+}

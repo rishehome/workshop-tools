@@ -1,0 +1,71 @@
+{
+  "export": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers",
+  "images": {
+    "hero": {
+      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 220.0,
+    "height": 85.0,
+    "depth": 30.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "config": {
+    "name": "Bit holder",
+    "category": "Shapeoko 5 variant",
+    "feature_title": "The details.",
+    "feature_text": "Numbered bit storage.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 220.0,
+      "height": 85.0,
+      "depth": 30.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "object.step"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 1.6,
+      "x": 50,
+      "y": 50
+    },
+    "size_text": "220.0 \u00d7 85.0 \u00d7 30.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "48ea0deec7ae48bbc92f8c59c2265c5ff017fb2a45ca9849f6a64b2dd23d0d9d",
+    "detail": "8e88ddf80c9c5cb9cf1347bcde244eefa442e3b4daeac651dc7a285d20da393f",
+    "alternate": "8e88ddf80c9c5cb9cf1347bcde244eefa442e3b4daeac651dc7a285d20da393f"
+  },
+  "scale": 1,
+  "format": "story",
+  "canvas": [
+    1080,
+    1920
+  ]
+}

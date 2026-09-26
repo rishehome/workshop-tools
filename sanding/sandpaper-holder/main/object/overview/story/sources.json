@@ -1,0 +1,71 @@
+{
+  "export": "sanding/sandpaper-holder/main/object",
+  "images": {
+    "hero": {
+      "path": "sanding/sandpaper-holder/main/object/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "sanding/sandpaper-holder/main/object/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "sanding/sandpaper-holder/main/object/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 183.34368495788536,
+    "height": 174.0,
+    "depth": 200.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "../../object.FCStd"
+  },
+  "config": {
+    "name": "Sandpaper holder",
+    "category": "Workshop tool / CAD preview",
+    "feature_title": "The details.",
+    "feature_text": "Saved design geometry.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 183.34368495788536,
+      "height": 174.0,
+      "depth": 200.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "../../object.FCStd"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 1.6,
+      "x": 50,
+      "y": 50
+    },
+    "size_text": "183.3 \u00d7 174.0 \u00d7 200.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "e231be1b27ffa3f348b9fbd89befbceb326ece54f03ec746750f11ec6cd5919b",
+    "detail": "e03ead89820eeea25e4a3e471fb6cc7fa8e21e58333d71951317a72ff4b96a01",
+    "alternate": "e03ead89820eeea25e4a3e471fb6cc7fa8e21e58333d71951317a72ff4b96a01"
+  },
+  "scale": 1,
+  "format": "story",
+  "canvas": [
+    1080,
+    1920
+  ]
+}

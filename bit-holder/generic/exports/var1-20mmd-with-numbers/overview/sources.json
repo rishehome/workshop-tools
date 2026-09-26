@@ -1,0 +1,71 @@
+{
+  "export": "bit-holder/generic/exports/var1-20mmd-with-numbers",
+  "images": {
+    "hero": {
+      "path": "bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 220.0,
+    "height": 100.0,
+    "depth": 20.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "config": {
+    "name": "Bit holder",
+    "category": "Generic / Workshop tool",
+    "feature_title": "The details.",
+    "feature_text": "Numbered bit storage.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 220.0,
+      "height": 100.0,
+      "depth": 20.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "object.step"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 1.6,
+      "x": 50,
+      "y": 50
+    },
+    "size_text": "220.0 \u00d7 100.0 \u00d7 20.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "607b184220c2f03eb5796e2ab4070aea392899c949f0a2408d852aa03b653c98",
+    "detail": "61b2840456f4f7d02f296f43062c6a81e575736a3d3b8c9791ab18cd5a851685",
+    "alternate": "61b2840456f4f7d02f296f43062c6a81e575736a3d3b8c9791ab18cd5a851685"
+  },
+  "scale": 1,
+  "format": "landscape",
+  "canvas": [
+    1536,
+    1024
+  ]
+}

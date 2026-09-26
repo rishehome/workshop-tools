@@ -7,15 +7,34 @@ Free tool designs, jigs, fixtures, and workshop helpers created for practical CN
 | Design | Description | Source | Exports |
 | --- | --- | --- | --- |
 | [Generic bit holder](bit-holder/generic/README.md) | General workshop bit-holder design | [FreeCAD source](bit-holder/generic/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/generic/exports/var1-20mmd-with-numbers/) |
-| [Shapeoko 5 bit holder](bit-holder/shapeoko-5/) | Separately maintained Shapeoko 5 variant; verify fit against your setup | [FreeCAD source](bit-holder/shapeoko-5/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/) |
-| [Round-corner sanding tools](sanding/round-corner-sanding-tools/) | Sanding-tool variants for shaped corners | [FreeCAD source](sanding/round-corner-sanding-tools/object.FCStd) | [4.75 mm corner, 10 mm half-round, 5 mm corner, 3 mm corner](sanding/round-corner-sanding-tools/exports/) |
+| [Shapeoko 5 bit holder](bit-holder/shapeoko-5/README.md) | Separately maintained Shapeoko 5 variant; verify fit against your setup | [FreeCAD source](bit-holder/shapeoko-5/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/) |
+| [Round-corner sanding tools](sanding/round-corner-sanding-tools/README.md) | Sanding-tool variants for shaped corners | [FreeCAD source](sanding/round-corner-sanding-tools/object.FCStd) | [4.75 mm corner, 10 mm half-round, 5 mm corner, 3 mm corner](sanding/round-corner-sanding-tools/exports/) |
+| [Sandpaper holder](sanding/sandpaper-holder/README.md) | Saved sandpaper-holder design | [FreeCAD source](sanding/sandpaper-holder/object.FCStd) | No published interchange exports |
 
-Start with the design guide where available. The generic bit holder and sanding
-tools have guides; the Shapeoko 5 directory currently contains the source and
-exports without a dedicated README. Variant names identify the files, not a
-verified specification or fit guarantee.
+Each design guide includes its main overview, Instagram Story overview, and
+five render views. Variant names identify files, not a verified fit guarantee.
 
-## Quick start
+## Renders and overviews
+
+Each design has solid-gray CAD renders and two Rishe overview layouts: the
+main 3:2 card and a 9:16 Instagram Story card. See the [visual asset guide](docs/visual-assets.md) to regenerate
+them, change the render color, or customize overview copy.
+
+![Generic bit holder overview](bit-holder/generic/exports/var1-20mmd-with-numbers/overview/product-overview.png)
+
+Overview previews: [Generic bit holder](bit-holder/generic/exports/var1-20mmd-with-numbers/overview/product-overview.png),
+[Shapeoko 5 bit holder](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/overview/product-overview.png),
+[4.75 mm corner](sanding/round-corner-sanding-tools/exports/var1-corner-4_75mm/overview/product-overview.png),
+[10 mm half-round](sanding/round-corner-sanding-tools/exports/var2-half-10mm/overview/product-overview.png),
+[5 mm corner](sanding/round-corner-sanding-tools/exports/var3-corner-5mm/overview/product-overview.png),
+[3 mm corner](sanding/round-corner-sanding-tools/exports/var4-corner-3mm/overview/product-overview.png),
+and [sandpaper holder](sanding/sandpaper-holder/main/object/overview/product-overview.png).
+
+| Generic bit holder | Shapeoko 5 bit holder | Sanding tool | Sandpaper holder |
+| --- | --- | --- | --- |
+| ![Generic bit holder render](bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Shapeoko 5 bit holder render](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Sanding tool render](sanding/round-corner-sanding-tools/exports/var1-corner-4_75mm/renders/solid-three-quarter.png) | ![Sandpaper holder render](sanding/sandpaper-holder/main/object/renders/solid-three-quarter.png) |
+
+## Using the designs
 
 1. Choose a design above and read its guide where available, such as the [generic bit-holder guide](bit-holder/generic/README.md).
 2. Download the `.FCStd` source if you need to inspect the FreeCAD model, or choose an exported format for your CAD/CAM workflow.

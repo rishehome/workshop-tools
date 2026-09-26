@@ -1,0 +1,20 @@
+{
+  "name": "Bit holder",
+  "category": "Shapeoko 5 variant",
+  "caption": "Nardo-inspired gray",
+  "feature_title": "The details.",
+  "feature_text": "Numbered bit storage.",
+  "feature_note": "",
+  "alternate_title": "Front view",
+  "collection": "RISHE / WORKSHOP",
+  "images": {
+    "hero": "solid-three-quarter",
+    "detail": "solid-front",
+    "alternate": "solid-front"
+  },
+  "detail_crop": {
+    "scale": 1.6,
+    "x": 50,
+    "y": 50
+  }
+}

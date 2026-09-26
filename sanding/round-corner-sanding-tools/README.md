@@ -2,6 +2,66 @@
 
 This directory contains the FreeCAD source and published exports for hand tools intended to support sanding shaped corners. Four variants are included; their directory names identify the published corner or half-round size.
 
+## Overviews and renders
+
+Each preview uses its published STEP export. Gray is an illustrative finish.
+
+### 4.75 mm corner
+
+![4.75 mm corner sanding tool overview](exports/var1-corner-4_75mm/overview/product-overview.png)
+
+<details><summary>Instagram Story overview</summary>
+
+![4.75 mm corner sanding tool Instagram Story overview](exports/var1-corner-4_75mm/overview/story/product-overview.png)
+
+</details>
+
+| Three-quarter | Front | Side | Top | Back |
+| --- | --- | --- | --- | --- |
+| ![4.75 mm corner sanding tool three-quarter render](exports/var1-corner-4_75mm/renders/solid-three-quarter.png) | ![4.75 mm corner sanding tool front render](exports/var1-corner-4_75mm/renders/solid-front.png) | ![4.75 mm corner sanding tool side render](exports/var1-corner-4_75mm/renders/solid-side.png) | ![4.75 mm corner sanding tool top render](exports/var1-corner-4_75mm/renders/solid-top.png) | ![4.75 mm corner sanding tool back render](exports/var1-corner-4_75mm/renders/solid-back.png) |
+
+### 10 mm half-round
+
+![10 mm half-round sanding tool overview](exports/var2-half-10mm/overview/product-overview.png)
+
+<details><summary>Instagram Story overview</summary>
+
+![10 mm half-round sanding tool Instagram Story overview](exports/var2-half-10mm/overview/story/product-overview.png)
+
+</details>
+
+| Three-quarter | Front | Side | Top | Back |
+| --- | --- | --- | --- | --- |
+| ![10 mm half-round sanding tool three-quarter render](exports/var2-half-10mm/renders/solid-three-quarter.png) | ![10 mm half-round sanding tool front render](exports/var2-half-10mm/renders/solid-front.png) | ![10 mm half-round sanding tool side render](exports/var2-half-10mm/renders/solid-side.png) | ![10 mm half-round sanding tool top render](exports/var2-half-10mm/renders/solid-top.png) | ![10 mm half-round sanding tool back render](exports/var2-half-10mm/renders/solid-back.png) |
+
+### 5 mm corner
+
+![5 mm corner sanding tool overview](exports/var3-corner-5mm/overview/product-overview.png)
+
+<details><summary>Instagram Story overview</summary>
+
+![5 mm corner sanding tool Instagram Story overview](exports/var3-corner-5mm/overview/story/product-overview.png)
+
+</details>
+
+| Three-quarter | Front | Side | Top | Back |
+| --- | --- | --- | --- | --- |
+| ![5 mm corner sanding tool three-quarter render](exports/var3-corner-5mm/renders/solid-three-quarter.png) | ![5 mm corner sanding tool front render](exports/var3-corner-5mm/renders/solid-front.png) | ![5 mm corner sanding tool side render](exports/var3-corner-5mm/renders/solid-side.png) | ![5 mm corner sanding tool top render](exports/var3-corner-5mm/renders/solid-top.png) | ![5 mm corner sanding tool back render](exports/var3-corner-5mm/renders/solid-back.png) |
+
+### 3 mm corner
+
+![3 mm corner sanding tool overview](exports/var4-corner-3mm/overview/product-overview.png)
+
+<details><summary>Instagram Story overview</summary>
+
+![3 mm corner sanding tool Instagram Story overview](exports/var4-corner-3mm/overview/story/product-overview.png)
+
+</details>
+
+| Three-quarter | Front | Side | Top | Back |
+| --- | --- | --- | --- | --- |
+| ![3 mm corner sanding tool three-quarter render](exports/var4-corner-3mm/renders/solid-three-quarter.png) | ![3 mm corner sanding tool front render](exports/var4-corner-3mm/renders/solid-front.png) | ![3 mm corner sanding tool side render](exports/var4-corner-3mm/renders/solid-side.png) | ![3 mm corner sanding tool top render](exports/var4-corner-3mm/renders/solid-top.png) | ![3 mm corner sanding tool back render](exports/var4-corner-3mm/renders/solid-back.png) |
+
 ## Files
 
 | Path | Purpose |
@@ -29,7 +89,7 @@ Every export package contains the following files:
 - Select a material and manufacturing process appropriate to the intended use and loading.
 - Perform a test fit or test piece before relying on a finished tool.
 
-No authoritative dimensions, tolerances, material specification, sanding-media specification, or compatibility claim is currently recorded in this repository. Treat the variant names as identifiers and verify all geometry in FreeCAD or your CAD/CAM software before manufacturing.
+The overview dimensions are measured CAD bounding extents. Tolerances, material, sanding-media specifications, and compatibility remain unverified. Treat the variant names as identifiers and verify all geometry in FreeCAD or your CAD/CAM software before manufacturing.
 
 ## Choosing a file
 

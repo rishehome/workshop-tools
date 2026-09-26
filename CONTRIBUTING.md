@@ -10,6 +10,7 @@ Contributions are welcome for design corrections, clearer documentation, and new
 4. Regenerate the published exports that are affected by the change.
 5. Inspect the source and at least one exported file after reopening or importing them.
 6. Update documentation when dimensions, intended use, materials, compatibility, or limitations change.
+7. Regenerate affected renders and overview cards using the [visual asset guide](docs/visual-assets.md), then inspect the main and Instagram Story overviews and render views. Keep CAD-derived dimensions in `model-facts.json` and authored copy in `overview.json`.
 
 Do not treat an `.FCBak` file as the canonical source. Keep the primary `.FCStd` file identifiable and avoid committing editor-generated temporary files.
 

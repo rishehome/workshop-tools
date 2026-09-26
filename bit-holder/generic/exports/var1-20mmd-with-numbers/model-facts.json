@@ -1,0 +1,22 @@
+{
+  "source": "object.step",
+  "source_sha256": "cb32466141b898d238978ee67a1c08afb7a8045274dfec485c604aaad896f99d",
+  "axes": "xyz",
+  "dimensions": {
+    "width": 220.0,
+    "height": 100.0,
+    "depth": 20.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "bounds_mm": {
+    "x": 220.0,
+    "y": 100.0,
+    "z": 20.0
+  },
+  "selected_bodies": [],
+  "solid_count": 1,
+  "freecad_version": "1.1.3"
+}

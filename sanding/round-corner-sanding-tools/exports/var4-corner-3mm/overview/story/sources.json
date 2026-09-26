@@ -1,0 +1,71 @@
+{
+  "export": "sanding/round-corner-sanding-tools/exports/var4-corner-3mm",
+  "images": {
+    "hero": {
+      "path": "sanding/round-corner-sanding-tools/exports/var4-corner-3mm/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "sanding/round-corner-sanding-tools/exports/var4-corner-3mm/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "sanding/round-corner-sanding-tools/exports/var4-corner-3mm/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 43.29568801169576,
+    "height": 43.29568801169576,
+    "depth": 48.58578643762,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "config": {
+    "name": "Sanding tool",
+    "category": "Variant 4 / corner 3mm",
+    "feature_title": "The details.",
+    "feature_text": "Corner sanding profile.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 43.29568801169576,
+      "height": 43.29568801169576,
+      "depth": 48.58578643762,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "object.step"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 1.6,
+      "x": 50,
+      "y": 50
+    },
+    "size_text": "43.3 \u00d7 43.3 \u00d7 48.6 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "47992a5064a2c3eda2acf99b30480af6983a70d7bde19e877ce578fe18705d36",
+    "detail": "d3b5ea43775c1bdbc235936db4f1474031f12d121f41e0db00fb27e87fd23e24",
+    "alternate": "d3b5ea43775c1bdbc235936db4f1474031f12d121f41e0db00fb27e87fd23e24"
+  },
+  "scale": 1,
+  "format": "story",
+  "canvas": [
+    1080,
+    1920
+  ]
+}

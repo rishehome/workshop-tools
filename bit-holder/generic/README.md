@@ -2,6 +2,22 @@
 
 This directory contains the FreeCAD source and published exports for a bit-holder design.
 
+## Overview and renders
+
+![Generic bit holder overview](exports/var1-20mmd-with-numbers/overview/product-overview.png)
+
+<details><summary>Instagram Story overview</summary>
+
+![Generic bit holder Instagram Story overview](exports/var1-20mmd-with-numbers/overview/story/product-overview.png)
+
+</details>
+
+| Three-quarter | Front | Side | Top | Back |
+| --- | --- | --- | --- | --- |
+| ![Generic bit holder three-quarter render](exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Generic bit holder front render](exports/var1-20mmd-with-numbers/renders/solid-front.png) | ![Generic bit holder side render](exports/var1-20mmd-with-numbers/renders/solid-side.png) | ![Generic bit holder top render](exports/var1-20mmd-with-numbers/renders/solid-top.png) | ![Generic bit holder back render](exports/var1-20mmd-with-numbers/renders/solid-back.png) |
+
+The previews use the published STEP export. Gray is an illustrative finish.
+
 ## Files
 
 | Path | Purpose |
@@ -24,7 +40,7 @@ The export directory name is retained as published. Confirm the intended variant
 - Select a material and manufacturing process appropriate to the loads and environment.
 - Perform a test fit or test piece before relying on the finished part.
 
-No authoritative dimensions, tolerances, material specification, or machine-compatibility claim is currently recorded in this repository. Treat those values as user-verification items until a measured design specification is added.
+The overview dimensions are measured CAD bounding extents. Tolerances, material specification, and machine compatibility remain unverified. Treat those values as user-verification items until a measured design specification is added.
 
 ## Choosing a file
 
