@@ -1,0 +1,71 @@
+{
+  "export": "cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward",
+  "images": {
+    "hero": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 39.90000000000206,
+    "height": 38.82050807568086,
+    "depth": 30.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "object.step"
+  },
+  "config": {
+    "name": "Camera mount",
+    "category": "Shapeoko DIY / Workshop tool",
+    "feature_title": "The details.",
+    "feature_text": "60\u00b0 upward variant.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 39.90000000000206,
+      "height": 38.82050807568086,
+      "depth": 30.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "object.step"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 2.5,
+      "x": 55,
+      "y": 55
+    },
+    "size_text": "39.9 \u00d7 38.8 \u00d7 30.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "9c29253874b2103d6fd4fbe97772f439288d7dbbb307d62b9942a65f151c87cf",
+    "detail": "147e59c9cfddb30afc6b87726bec2c24e9c9419f73995897960c342a397312dc",
+    "alternate": "147e59c9cfddb30afc6b87726bec2c24e9c9419f73995897960c342a397312dc"
+  },
+  "scale": 1,
+  "format": "landscape",
+  "canvas": [
+    1536,
+    1024
+  ]
+}

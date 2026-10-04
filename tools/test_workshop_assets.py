@@ -34,6 +34,12 @@ class WorkshopAssetsTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             select(self.root.parent, self.root)
 
+    def test_generated_website_cad_copies_are_excluded(self):
+        cad = self.file('tool/object.FCStd')
+        self.file('_site/files/tool/object.FCStd')
+        self.file('_site/files/tool/exports/v1/object.step')
+        self.assertEqual(discover(self.root), [(cad, cad.parent / 'main/object')])
+
     def test_ambiguous_export_is_rejected(self):
         self.file('tool/object.FCStd')
         self.file('tool/exports/v1/a.step')
