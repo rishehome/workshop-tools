@@ -35,39 +35,63 @@ source-file placeholder. Existing `model-facts.json` dimensions are labeled as
 approximate CAD body extents, not verified fit specifications. No geometry is
 regenerated as part of the website build.
 
-## Manual updates and GitHub Pages
+## Update and publish
+
+From the repository root, run:
+
+```sh
+python3 tools/publish_website.py
+```
+
+This generates all five transparent render views and both overview cards for
+all designs, refreshes measured dimensions, builds `_site/`, validates its
+links and download bundles, and commits and pushes the output to `gh-pages`.
+The command stops on any generation or validation failure before publishing.
+It uses a temporary detached Git worktree, removes it afterward, and leaves
+your source branch selected. It uses a normal push; if another update reaches
+`gh-pages` first, rerun the command rather than force-pushing.
+
+Install the render dependencies once using the setup in
+[the visual assets guide](../docs/visual-assets.md). Blender and FreeCAD are
+required for rendering; the script detects their standard macOS installation
+paths. Use `--blender /path/to/blender` or `BLENDER` for another Blender path,
+`FREECAD_PYTHON` for another FreeCAD runtime, and `--python /path/to/python`
+for the Python environment containing Jinja2 and Playwright. The script
+prefers `venv/bin/python` when present. Git push access and a Git commit identity
+must be configured. The remote must already have a `gh-pages` branch.
+
+To regenerate one design and publish the complete catalog:
+
+```sh
+python3 tools/publish_website.py --path cnc/camera-mount/shapeoko-diy-mount
+```
+
+For text or style updates using existing renders and overviews:
+
+```sh
+python3 tools/publish_website.py --skip-renders
+```
+
+To generate and validate without publishing:
+
+```sh
+python3 tools/publish_website.py --build-only
+python3 -m http.server 8765 --directory _site
+```
+
+Combine `--build-only` with `--path` or `--skip-renders` as needed. Use
+`--device cpu` to disable automatic Metal acceleration and `--remote NAME`
+to publish to another configured Git remote.
 
 Edit `catalog.json` for introductions and variant labels, `assets/site.css`
 for styling, `assets/theme.js` for theme behavior, and
-`../tools/build_website.py` for page markup. Run the build command above after
-each update. It regenerates HTML pages and copies the CSS, JavaScript and
-download files into `_site/`. Edit the source files rather than `_site/`, which
-is replaced during each build.
+`../tools/build_website.py` for page markup. Generated `_site/` files are
+replaced on each build. Renders, overviews and metadata are updated in your
+source checkout; commit and push those source changes separately so they
+remain reproducible. The publication script commits only the generated site
+to `gh-pages`.
 
-There is no repository Actions workflow. Publish when you are ready by copying
-the complete `_site/` output into a checkout of `gh-pages`, then committing and
-pushing that branch. Keep the generated `.nojekyll` file and all asset and
-download directories together.
-
-To create a separate publication checkout once, from the repository root:
-
-```sh
-git fetch origin
-git worktree add --track -b gh-pages ../workshop-tools-pages origin/gh-pages
-```
-
-If you already have a `gh-pages` checkout, use that existing checkout instead.
-For each update, build and validate locally, then publish:
-
-```sh
-python3 tools/build_website.py
-python3 -m unittest discover -s tools -p test_website.py
-git -C ../workshop-tools-pages pull --ff-only
-rsync -a --delete --exclude='.git' _site/ ../workshop-tools-pages/
-git -C ../workshop-tools-pages add --all
-git -C ../workshop-tools-pages commit -m "Update workshop website"
-git -C ../workshop-tools-pages push origin gh-pages
-```
+There is no repository Actions workflow. Publishing is a local command.
 
 In repository **Settings → Pages**, choose **Deploy from a branch → gh-pages →
 / (root)**. GitHub serves the committed files; generating the website remains

@@ -8,8 +8,8 @@ The English workshop catalog introduces every saved object and links to its
 available FreeCAD sources and interchange exports. It follows the Rishe web
 design system, with local fonts, light/dark themes and responsive object pages.
 See [website/README.md](website/README.md) for building, previewing and GitHub
-Pages deployment. Generate the site locally and publish the output manually
-to `gh-pages` when you are ready to update it.
+Pages deployment. Run `python3 tools/publish_website.py` to regenerate renders
+and overviews, build and validate the site, and publish it to `gh-pages`.
 
 ## Designs
 
