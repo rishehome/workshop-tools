@@ -89,7 +89,7 @@ def build(output):
 <link rel="icon" href="{prefix}assets/logo.svg" type="image/svg+xml"><link rel="preload" href="{prefix}assets/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{prefix}assets/site.css"><script src="{prefix}assets/theme.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header><div class="editorial-container header-inner">
-<a class="brand" href="{prefix}index.html"><img src="{prefix}assets/logo.svg" width="26" height="36" alt=""><span>rishe<span class="brand-label">WORKSHOP</span></span></a>
+<a class="brand" href="{prefix}index.html"><img src="{prefix}assets/logo.svg" width="26" height="36" alt=""><span>Rishe<span class="brand-label">WORKSHOP</span></span></a>
 <nav aria-label="Main navigation"><a href="{prefix}index.html#collection">Objects</a><a href="{prefix}index.html#using">Using the files</a><a href="https://github.com/rishehome/workshop-tools">GitHub ↗</a></nav>
 <div class="themes" role="group" aria-label="Color theme" hidden><button data-theme="auto" aria-pressed="true">Auto</button><button data-theme="light" aria-pressed="false">Light</button><button data-theme="dark" aria-pressed="false">Dark</button></div></div></header>
 <main id="main">{content}</main><footer><div class="editorial-container footer-inner"><div><span class="footer-brand">Rishe / Workshop</span><p>Practical objects. Shared with care.</p></div><div><a href="{prefix}LICENSE.md">CC BY-NC-ND 4.0 license</a><a href="https://github.com/rishehome/workshop-tools">Source repository ↗</a><a href="mailto:info@rishehome.com">Commercial licensing</a></div></div></footer></body></html>'''
