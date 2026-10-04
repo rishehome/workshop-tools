@@ -1,0 +1,24 @@
+{
+  "source": "cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/object.step",
+  "source_sha256": "4d774249bcc7093759c258d57a68083de48dccf012299ba499b902aa9cdf821d",
+  "orientation": {
+    "top": "+Z",
+    "front": "-Y"
+  },
+  "color_srgb": "#9C9D9F",
+  "roughness": 0.52,
+  "background": "transparent",
+  "color_mode": "RGBA",
+  "blender": "3.4.1",
+  "views": [
+    "front",
+    "side",
+    "top",
+    "back",
+    "three-quarter"
+  ],
+  "cad": {
+    "valid": true,
+    "objects": []
+  }
+}

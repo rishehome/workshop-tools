@@ -1,0 +1,14 @@
+{
+  "name": "Camera mount",
+  "category": "Shapeoko DIY / Workshop tool",
+  "caption": "Nardo-inspired gray",
+  "feature_title": "The details.",
+  "feature_text": "60° upward variant.",
+  "alternate_title": "Front view",
+  "collection": "RISHE / WORKSHOP",
+  "images": {
+    "hero": "solid-three-quarter",
+    "detail": "solid-front",
+    "alternate": "solid-front"
+  }
+}

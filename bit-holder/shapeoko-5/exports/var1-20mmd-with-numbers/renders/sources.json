@@ -7,6 +7,8 @@
   },
   "color_srgb": "#9C9D9F",
   "roughness": 0.52,
+  "background": "transparent",
+  "color_mode": "RGBA",
   "blender": "3.4.1",
   "views": [
     "front",
