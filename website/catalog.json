@@ -9,7 +9,7 @@
     "name": "Shapeoko 5 bit holder", "category": "Bit storage",
     "description": "Numbered bit storage for a Shapeoko 5 setup. A separately maintained variant for keeping the tools you reach for close at hand.",
     "note": "Verify mounting fit, clearances and dimensions against your own machine.",
-    "variants": {"var1-20mmd-with-numbers": "Numbered holder / Variant 1"}
+    "variants": {"var1-180mml-with-numbers": "Numbered holder / Variant 1"}
   },
   "sanding/round-corner-sanding-tools": {
     "name": "Round-corner sanding tools", "category": "Sanding",

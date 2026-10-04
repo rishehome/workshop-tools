@@ -1,20 +1,20 @@
 {
   "source": "object.step",
-  "source_sha256": "1162bd625a1a0e5b5a913053e503df3aeee1d82b40dc8b9cdb306806fe2749b3",
+  "source_sha256": "a151d703b78d2712e22b08a42bbf1f0f2b2ab9fe7e4b37c1de7ef1505853dbd9",
   "axes": "xyz",
   "dimensions": {
-    "width": 220.0,
+    "width": 180.0,
     "height": 85.0,
-    "depth": 30.0,
+    "depth": 27.0,
     "unit": "mm",
     "decimals": 1,
     "note": "Approx. \u00b7 CAD body dimensions",
     "source": "object.step"
   },
   "bounds_mm": {
-    "x": 220.0,
+    "x": 180.0,
     "y": 85.0,
-    "z": 30.0
+    "z": 27.0
   },
   "selected_bodies": [],
   "solid_count": 1,

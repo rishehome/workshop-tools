@@ -4,24 +4,24 @@ A separately maintained bit-holder variant for a Shapeoko 5 setup. Verify fit ag
 
 ## Overview and renders
 
-![Shapeoko 5 bit holder overview](exports/var1-20mmd-with-numbers/overview/product-overview.png)
+![Shapeoko 5 bit holder overview](exports/var1-180mml-with-numbers/overview/product-overview.png)
 
 <details><summary>Instagram Story overview</summary>
 
-![Shapeoko 5 bit holder Instagram Story overview](exports/var1-20mmd-with-numbers/overview/story/product-overview.png)
+![Shapeoko 5 bit holder Instagram Story overview](exports/var1-180mml-with-numbers/overview/story/product-overview.png)
 
 </details>
 
 | Three-quarter | Front | Side | Top | Back |
 | --- | --- | --- | --- | --- |
-| ![Shapeoko 5 bit holder three-quarter render](exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Shapeoko 5 bit holder front render](exports/var1-20mmd-with-numbers/renders/solid-front.png) | ![Shapeoko 5 bit holder side render](exports/var1-20mmd-with-numbers/renders/solid-side.png) | ![Shapeoko 5 bit holder top render](exports/var1-20mmd-with-numbers/renders/solid-top.png) | ![Shapeoko 5 bit holder back render](exports/var1-20mmd-with-numbers/renders/solid-back.png) |
+| ![Shapeoko 5 bit holder three-quarter render](exports/var1-180mml-with-numbers/renders/solid-three-quarter.png) | ![Shapeoko 5 bit holder front render](exports/var1-180mml-with-numbers/renders/solid-front.png) | ![Shapeoko 5 bit holder side render](exports/var1-180mml-with-numbers/renders/solid-side.png) | ![Shapeoko 5 bit holder top render](exports/var1-180mml-with-numbers/renders/solid-top.png) | ![Shapeoko 5 bit holder back render](exports/var1-180mml-with-numbers/renders/solid-back.png) |
 
 The previews and CAD dimensions use the published STEP export; the editable source may contain newer changes. Gray is an illustrative finish.
 
 ## Files
 
 - [FreeCAD source](object.FCStd)
-- [Published STEP, STL, OBJ and MTL exports](exports/var1-20mmd-with-numbers/)
+- [Published STEP, STL, OBJ and MTL exports](exports/var1-180mml-with-numbers/)
 
 ## Before use
 

@@ -5,12 +5,12 @@
   "feature_title": "The details.",
   "feature_text": "Numbered bit storage.",
   "feature_note": "",
-  "alternate_title": "Front view",
+  "alternate_title": "Top view",
   "collection": "RISHE / WORKSHOP",
   "images": {
     "hero": "solid-three-quarter",
-    "detail": "solid-front",
-    "alternate": "solid-front"
+    "detail": "solid-top",
+    "alternate": "solid-top"
   },
   "detail_crop": {
     "scale": 1.6,

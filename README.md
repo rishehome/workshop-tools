@@ -16,7 +16,7 @@ and overviews, build and validate the site, and publish it to `gh-pages`.
 | Design | Description | Source | Exports |
 | --- | --- | --- | --- |
 | [Generic bit holder](bit-holder/generic/README.md) | General workshop bit-holder design | [FreeCAD source](bit-holder/generic/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/generic/exports/var1-20mmd-with-numbers/) |
-| [Shapeoko 5 bit holder](bit-holder/shapeoko-5/README.md) | Separately maintained Shapeoko 5 variant; verify fit against your setup | [FreeCAD source](bit-holder/shapeoko-5/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/) |
+| [Shapeoko 5 bit holder](bit-holder/shapeoko-5/README.md) | Separately maintained Shapeoko 5 variant; verify fit against your setup | [FreeCAD source](bit-holder/shapeoko-5/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/) |
 | [Round-corner sanding tools](sanding/round-corner-sanding-tools/README.md) | Sanding-tool variants for shaped corners | [FreeCAD source](sanding/round-corner-sanding-tools/object.FCStd) | [4.75 mm corner, 10 mm half-round, 5 mm corner, 3 mm corner](sanding/round-corner-sanding-tools/exports/) |
 | [Sandpaper holder](sanding/sandpaper-holder/README.md) | Saved sandpaper-holder design | [FreeCAD source](sanding/sandpaper-holder/object.FCStd) | No published interchange exports |
 | Shapeoko DIY camera mount | Camera-mount design; inspect geometry and verify machine clearance | [FreeCAD source](cnc/camera-mount/shapeoko-diy-mount/object.FCStd) | [STEP, STL, OBJ, MTL](cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/) |
@@ -33,7 +33,7 @@ them, change the render color, or customize overview copy.
 ![Generic bit holder overview](bit-holder/generic/exports/var1-20mmd-with-numbers/overview/product-overview.png)
 
 Overview previews: [Generic bit holder](bit-holder/generic/exports/var1-20mmd-with-numbers/overview/product-overview.png),
-[Shapeoko 5 bit holder](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/overview/product-overview.png),
+[Shapeoko 5 bit holder](bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/overview/product-overview.png),
 [4.75 mm corner](sanding/round-corner-sanding-tools/exports/var1-corner-4_75mm/overview/product-overview.png),
 [10 mm half-round](sanding/round-corner-sanding-tools/exports/var2-half-10mm/overview/product-overview.png),
 [5 mm corner](sanding/round-corner-sanding-tools/exports/var3-corner-5mm/overview/product-overview.png),
@@ -42,7 +42,7 @@ and [sandpaper holder](sanding/sandpaper-holder/main/object/overview/product-ove
 
 | Generic bit holder | Shapeoko 5 bit holder | Sanding tool | Sandpaper holder |
 | --- | --- | --- | --- |
-| ![Generic bit holder render](bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Shapeoko 5 bit holder render](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Sanding tool render](sanding/round-corner-sanding-tools/exports/var1-corner-4_75mm/renders/solid-three-quarter.png) | ![Sandpaper holder render](sanding/sandpaper-holder/main/object/renders/solid-three-quarter.png) |
+| ![Generic bit holder render](bit-holder/generic/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png) | ![Shapeoko 5 bit holder render](bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/renders/solid-three-quarter.png) | ![Sanding tool render](sanding/round-corner-sanding-tools/exports/var1-corner-4_75mm/renders/solid-three-quarter.png) | ![Sandpaper holder render](sanding/sandpaper-holder/main/object/renders/solid-three-quarter.png) |
 
 ## Using the designs
 

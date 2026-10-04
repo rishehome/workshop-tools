@@ -1,23 +1,23 @@
 {
-  "export": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers",
+  "export": "bit-holder/shapeoko-5/exports/var1-180mml-with-numbers",
   "images": {
     "hero": {
-      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-three-quarter.png",
+      "path": "bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/renders/solid-three-quarter.png",
       "type": "render"
     },
     "detail": {
-      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "path": "bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/renders/solid-top.png",
       "type": "render"
     },
     "alternate": {
-      "path": "bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/renders/solid-front.png",
+      "path": "bit-holder/shapeoko-5/exports/var1-180mml-with-numbers/renders/solid-top.png",
       "type": "render"
     }
   },
   "dimensions": {
-    "width": 220.0,
+    "width": 180.0,
     "height": 85.0,
-    "depth": 30.0,
+    "depth": 27.0,
     "unit": "mm",
     "decimals": 1,
     "note": "Approx. \u00b7 CAD body dimensions",
@@ -31,36 +31,36 @@
     "feature_note": "",
     "caption": "Nardo-inspired gray",
     "dimensions": {
-      "width": 220.0,
+      "width": 180.0,
       "height": 85.0,
-      "depth": 30.0,
+      "depth": 27.0,
       "unit": "mm",
       "decimals": 1,
       "note": "Approx. \u00b7 CAD body dimensions",
       "source": "object.step"
     },
-    "alternate_title": "Front view",
+    "alternate_title": "Top view",
     "collection": "RISHE / WORKSHOP",
     "images": {
       "hero": "solid-three-quarter",
-      "detail": "solid-front",
-      "alternate": "solid-front"
+      "detail": "solid-top",
+      "alternate": "solid-top"
     },
     "detail_crop": {
       "scale": 1.6,
       "x": 50,
       "y": 50
     },
-    "size_text": "220.0 \u00d7 85.0 \u00d7 30.0 mm",
+    "size_text": "180.0 \u00d7 85.0 \u00d7 27.0 mm",
     "status": "Render preview"
   },
   "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
   "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
   "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
   "image_sha256": {
-    "hero": "27fac3468f6ee01b41a7ef961b0dbf8ddb1d294027f3f1a7292184b3c34ad17c",
-    "detail": "5180a97a78fec9ed0c0feb3e3ffa17b2ee4b290709c48852f84ebf618b1bbe44",
-    "alternate": "5180a97a78fec9ed0c0feb3e3ffa17b2ee4b290709c48852f84ebf618b1bbe44"
+    "hero": "aa05c66c528b89a42ea86e8301b6bdacc487110fbd7b46377cbdd502793c0593",
+    "detail": "e62c3dd62f033f8fadf49bc98bf951e45150e7574f0846cf1dbfa742e9ae5641",
+    "alternate": "e62c3dd62f033f8fadf49bc98bf951e45150e7574f0846cf1dbfa742e9ae5641"
   },
   "scale": 1,
   "format": "story",
