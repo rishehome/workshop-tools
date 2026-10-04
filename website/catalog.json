@@ -24,7 +24,8 @@
   },
   "cnc/camera-mount/shapeoko-diy-mount": {
     "name": "Shapeoko DIY camera mount", "category": "CNC accessories",
-    "description": "A camera-mount design for a Shapeoko setup. Explore the CAD previews and inspect the editable model to understand the mounting geometry.",
-    "note": "Check camera attachment, machine clearance and mounting fit in your setup."
+    "description": "A camera-mount design for a Shapeoko setup. Explore the CAD previews and download the editable source or published exports.",
+    "note": "Check camera attachment, machine clearance and mounting fit in your setup.",
+    "variants": {"var1-60deg-upward": "60° upward / Variant 1"}
   }
 }

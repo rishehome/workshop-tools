@@ -19,7 +19,7 @@ to `gh-pages` when you are ready to update it.
 | [Shapeoko 5 bit holder](bit-holder/shapeoko-5/README.md) | Separately maintained Shapeoko 5 variant; verify fit against your setup | [FreeCAD source](bit-holder/shapeoko-5/object.FCStd) | [STEP, STL, OBJ, MTL](bit-holder/shapeoko-5/exports/var1-20mmd-with-numbers/) |
 | [Round-corner sanding tools](sanding/round-corner-sanding-tools/README.md) | Sanding-tool variants for shaped corners | [FreeCAD source](sanding/round-corner-sanding-tools/object.FCStd) | [4.75 mm corner, 10 mm half-round, 5 mm corner, 3 mm corner](sanding/round-corner-sanding-tools/exports/) |
 | [Sandpaper holder](sanding/sandpaper-holder/README.md) | Saved sandpaper-holder design | [FreeCAD source](sanding/sandpaper-holder/object.FCStd) | No published interchange exports |
-| Shapeoko DIY camera mount | Camera-mount design; inspect geometry and verify machine clearance | [FreeCAD source](cnc/camera-mount/shapeoko-diy-mount/object.FCStd) | No published interchange exports |
+| Shapeoko DIY camera mount | Camera-mount design; inspect geometry and verify machine clearance | [FreeCAD source](cnc/camera-mount/shapeoko-diy-mount/object.FCStd) | [STEP, STL, OBJ, MTL](cnc/camera-mount/shapeoko-diy-mount/exports/var1-60deg-upward/) |
 
 Each design guide includes its main overview, Instagram Story overview, and
 five render views. Variant names identify files, not a verified fit guarantee.
