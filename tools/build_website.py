@@ -110,7 +110,9 @@ def build(output):
             dimensions = ''
             if variant['dimensions']:
                 d = variant['dimensions']
-                dimensions = '<dl class="dimensions">' + ''.join(f'<div><dt>{axis.capitalize()}</dt><dd>{esc(d[axis])} {esc(d["unit"])}</dd></div>' for axis in ['width', 'height', 'depth']) + '</dl><p class="small">Approximate CAD body extents; these are not fit specifications.</p>'
+                decimals = d.get('decimals')
+                spec = f'.{decimals}f' if decimals is not None else 'g'
+                dimensions = '<dl class="dimensions">' + ''.join(f'<div><dt>{axis.capitalize()}</dt><dd>{esc(format(d[axis], spec))} {esc(d["unit"])}</dd></div>' for axis in ['width', 'height', 'depth']) + '</dl><p class="small">Approximate CAD body extents; these are not fit specifications.</p>'
             gallery = ''.join(f'<a class="view" href="../{url}"><img src="../{url}" alt="{esc(model["name"])} — {esc(view.lower())} view" loading="lazy" width="1200" height="800"><span>{esc(view)}</span></a>' for view, url in variant['images'])
             overview = f'<a class="text-link" href="../{variant["overview"]}">Open product overview ↗</a>' if variant['overview'] else ''
             variants.append(f'<section class="variant editorial-card"><p class="section-kicker">{ "Published exports" if variant["files"] else "Source design" }</p><h2>{esc(variant["name"])}</h2>{dimensions}<div class="downloads">{downloads}</div>{"<p class=small>Keep OBJ and MTL together when importing. The ZIP includes both.</p>" if variant["files"] else ""}{"<div class=gallery>" + gallery + "</div>" if gallery else ""}{overview}</section>')
