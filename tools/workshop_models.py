@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def discover(root=ROOT):
     models = []
     for project in sorted(root.rglob('object.FCStd')):
-        if any(part in {'.git', 'venv', '.venv', 'main', 'exports', 'CAM'} for part in project.relative_to(root).parts[:-1]):
+        if any(part in {'.git', '_site', 'venv', '.venv', 'main', 'exports', 'CAM'} for part in project.relative_to(root).parts[:-1]):
             continue
         exports = project.parent / 'exports'
         if exports.is_dir():

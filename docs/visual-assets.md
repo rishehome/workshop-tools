@@ -6,6 +6,9 @@ helpers are vendored here so this repository works without a sibling checkout.
 The renderer creates five studio views in a solid Nardo-inspired gray
 (`#9C9D9F`, roughness 0.52), with no wood textures. This color is an illustrative
 finish, not a material specification or an exact automotive paint match.
+Renders are RGBA PNGs with transparent backgrounds and smooth alpha edges;
+studio lighting remains on the object. Overview cards retain their own layout
+backgrounds.
 
 ## Setup
 
@@ -54,8 +57,8 @@ its faces can render, but invalid solids cannot provide measured dimensions.
 
 Each variant (or `main/object/`) contains:
 
-- `renders/solid-{front,side,top,back,three-quarter}.png`: 1200 × 900 studio views.
-- `renders/sources.json`: source hash, color, renderer version and CAD validity.
+- `renders/solid-{front,side,top,back,three-quarter}.png`: 1200 × 900 transparent studio views.
+- `renders/sources.json`: source hash, color, transparency, renderer version and CAD validity.
 - `overview.json`: editable title, copy, image choices and detail crop.
 - `model-facts.json`: measured CAD dimensions and source hash.
 - `overview/product-overview.png` and `overview/sources.json`: main 3:2 card.

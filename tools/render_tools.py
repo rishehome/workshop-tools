@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render workshop CAD in a configurable solid studio finish using Blender."""
+"""Render transparent PNGs of workshop CAD in a configurable studio finish."""
 
 from __future__ import annotations
 
@@ -160,10 +160,10 @@ def render_preview(objects, destination: Path, view="three-quarter", source=None
     bpy.context.scene.render.filepath = str(destination)
     bpy.context.scene.world.color = (0.62, 0.53, 0.43)
     bpy.context.scene.view_settings.view_transform = "Standard"
-    # Composite transparent studio lighting over pure white, independent of exposure.
+    # Keep studio lighting while preserving the background and edge alpha.
     scene = bpy.context.scene
     scene.render.film_transparent = True
-    scene.render.image_settings.color_mode = "RGB"
+    scene.render.image_settings.color_mode = "RGBA"
     scene.view_settings.look = "None"
     scene.view_settings.exposure = 0
     scene.view_settings.gamma = 1
@@ -171,11 +171,8 @@ def render_preview(objects, destination: Path, view="three-quarter", source=None
     nodes = scene.node_tree.nodes
     nodes.clear()
     layers = nodes.new("CompositorNodeRLayers")
-    over = nodes.new("CompositorNodeAlphaOver")
-    over.inputs[1].default_value = (1, 1, 1, 1)
     composite = nodes.new("CompositorNodeComposite")
-    scene.node_tree.links.new(layers.outputs["Image"], over.inputs[2])
-    scene.node_tree.links.new(over.outputs["Image"], composite.inputs["Image"])
+    scene.node_tree.links.new(layers.outputs["Image"], composite.inputs["Image"])
     bpy.ops.render.render(write_still=True)
 
 
@@ -238,6 +235,7 @@ def main():
             'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
             'orientation': orientations[source],
             'color_srgb': '#' + color.upper(), 'roughness': .52,
+            'background': 'transparent', 'color_mode': 'RGBA',
             'blender': bpy.app.version_string, 'views': VIEWS,
             'cad': CAD_METADATA.get(str(source)),
         }, indent=2) + '\n')

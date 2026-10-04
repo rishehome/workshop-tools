@@ -1,0 +1,24 @@
+{
+  "source": "../../object.FCStd",
+  "source_sha256": "a7cb7ec28dd5ad34e45fefad27b5f94e2e16d9f57f1993b551f99837985b7067",
+  "axes": "xyz",
+  "dimensions": {
+    "width": 39.9,
+    "height": 38.82050807568877,
+    "depth": 30.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "../../object.FCStd"
+  },
+  "bounds_mm": {
+    "x": 39.9,
+    "y": 38.82050807568877,
+    "z": 30.0
+  },
+  "selected_bodies": [
+    "Body"
+  ],
+  "solid_count": 1,
+  "freecad_version": "1.1.3"
+}

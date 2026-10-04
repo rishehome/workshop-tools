@@ -1,0 +1,71 @@
+{
+  "export": "cnc/camera-mount/shapeoko-diy-mount/main/object",
+  "images": {
+    "hero": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/main/object/renders/solid-three-quarter.png",
+      "type": "render"
+    },
+    "detail": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/main/object/renders/solid-front.png",
+      "type": "render"
+    },
+    "alternate": {
+      "path": "cnc/camera-mount/shapeoko-diy-mount/main/object/renders/solid-front.png",
+      "type": "render"
+    }
+  },
+  "dimensions": {
+    "width": 39.9,
+    "height": 38.82050807568877,
+    "depth": 30.0,
+    "unit": "mm",
+    "decimals": 1,
+    "note": "Approx. \u00b7 CAD body dimensions",
+    "source": "../../object.FCStd"
+  },
+  "config": {
+    "name": "Camera mount",
+    "category": "Shapeoko DIY / Workshop tool",
+    "feature_title": "The details.",
+    "feature_text": "Saved camera-mount design.",
+    "feature_note": "",
+    "caption": "Nardo-inspired gray",
+    "dimensions": {
+      "width": 39.9,
+      "height": 38.82050807568877,
+      "depth": 30.0,
+      "unit": "mm",
+      "decimals": 1,
+      "note": "Approx. \u00b7 CAD body dimensions",
+      "source": "../../object.FCStd"
+    },
+    "alternate_title": "Front view",
+    "collection": "RISHE / WORKSHOP",
+    "images": {
+      "hero": "solid-three-quarter",
+      "detail": "solid-front",
+      "alternate": "solid-front"
+    },
+    "detail_crop": {
+      "scale": 2.5,
+      "x": 55,
+      "y": 55
+    },
+    "size_text": "39.9 \u00d7 38.8 \u00d7 30.0 mm",
+    "status": "Render preview"
+  },
+  "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
+  "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
+  "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+  "image_sha256": {
+    "hero": "19f9a85aa0cde734469cfaa8ab120d92695f4d44ecaaf285745fdb26fdb1f225",
+    "detail": "a629a7bfd8df5299dfcb93011a1a5841b332584c94f4e21fd15c5067cc4e1e2b",
+    "alternate": "a629a7bfd8df5299dfcb93011a1a5841b332584c94f4e21fd15c5067cc4e1e2b"
+  },
+  "scale": 1,
+  "format": "story",
+  "canvas": [
+    1080,
+    1920
+  ]
+}

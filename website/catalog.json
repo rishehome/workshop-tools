@@ -1,0 +1,30 @@
+{
+  "bit-holder/generic": {
+    "name": "Generic bit holder", "category": "Bit storage",
+    "description": "Give every bit a place. A numbered holder for keeping workshop tooling organised and easy to find.",
+    "note": "Inspect hole sizes and spacing against your tooling before fabrication.",
+    "variants": {"var1-20mmd-with-numbers": "Numbered holder / Variant 1"}
+  },
+  "bit-holder/shapeoko-5": {
+    "name": "Shapeoko 5 bit holder", "category": "Bit storage",
+    "description": "Numbered bit storage for a Shapeoko 5 setup. A separately maintained variant for keeping the tools you reach for close at hand.",
+    "note": "Verify mounting fit, clearances and dimensions against your own machine.",
+    "variants": {"var1-20mmd-with-numbers": "Numbered holder / Variant 1"}
+  },
+  "sanding/round-corner-sanding-tools": {
+    "name": "Round-corner sanding tools", "category": "Sanding",
+    "description": "Small hand tools for shaped corners. Explore four corner and half-round profiles, then choose the geometry that suits your workpiece.",
+    "note": "Variant names identify the published profiles. Verify geometry, grip and sanding-media attachment before use.",
+    "variants": {"var1-corner-4_75mm": "4.75 mm corner", "var2-half-10mm": "10 mm half-round", "var3-corner-5mm": "5 mm corner", "var4-corner-3mm": "3 mm corner"}
+  },
+  "sanding/sandpaper-holder": {
+    "name": "Sandpaper holder", "category": "Sanding",
+    "description": "A saved sandpaper-holder design to inspect and adapt for your workshop. Explore the CAD previews and download the editable FreeCAD source.",
+    "note": "Material, process and fit are unspecified. Check sandpaper fit and attachment before fabrication."
+  },
+  "cnc/camera-mount/shapeoko-diy-mount": {
+    "name": "Shapeoko DIY camera mount", "category": "CNC accessories",
+    "description": "A camera-mount design for a Shapeoko setup. Explore the CAD previews and inspect the editable model to understand the mounting geometry.",
+    "note": "Check camera attachment, machine clearance and mounting fit in your setup."
+  }
+}

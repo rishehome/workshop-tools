@@ -15,9 +15,9 @@
     }
   },
   "dimensions": {
-    "width": 183.34368495788536,
-    "height": 174.0,
-    "depth": 200.0,
+    "width": 183.34368495787854,
+    "height": 168.6639455328983,
+    "depth": 200.0000053364545,
     "unit": "mm",
     "decimals": 1,
     "note": "Approx. \u00b7 CAD body dimensions",
@@ -31,9 +31,9 @@
     "feature_note": "",
     "caption": "Nardo-inspired gray",
     "dimensions": {
-      "width": 183.34368495788536,
-      "height": 174.0,
-      "depth": 200.0,
+      "width": 183.34368495787854,
+      "height": 168.6639455328983,
+      "depth": 200.0000053364545,
       "unit": "mm",
       "decimals": 1,
       "note": "Approx. \u00b7 CAD body dimensions",
@@ -51,16 +51,16 @@
       "x": 50,
       "y": 50
     },
-    "size_text": "183.3 \u00d7 174.0 \u00d7 200.0 mm",
+    "size_text": "183.3 \u00d7 168.7 \u00d7 200.0 mm",
     "status": "Render preview"
   },
   "template_sha256": "82a3d17f94c455ab18d6814fedbdd32e6b8bd9bf586ccc2b80b249cd713689e0",
   "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
   "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
   "image_sha256": {
-    "hero": "924db45e4ff44a659f6ffb69d9cdb6a21e946e1877fc519cce2c1c62f7ad4783",
-    "detail": "9587476a11faf225829142bda2991d6e9c50f7e27e789acb153331383b090982",
-    "alternate": "9587476a11faf225829142bda2991d6e9c50f7e27e789acb153331383b090982"
+    "hero": "459a7f7a05b5d74906443ab0db7cb261d0790ada067d3d6c83a6ed82b873f7ba",
+    "detail": "e6a8e1172d094c4909a7a86b223b83d19c29b98d14985750d0fe23b898a8b011",
+    "alternate": "e6a8e1172d094c4909a7a86b223b83d19c29b98d14985750d0fe23b898a8b011"
   },
   "scale": 1,
   "format": "landscape",
