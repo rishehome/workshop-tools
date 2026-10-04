@@ -58,9 +58,9 @@
   "story_styles_sha256": "53d8535aa8bf2d47184e03144eecd88dbfbc1b69bf61b401931b3c67cb42cb37",
   "font_sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
   "image_sha256": {
-    "hero": "d99f78ab2de74d9582e24b88a3ca0d0d65f9b6f12d8bb99a170119797ef3bd57",
-    "detail": "6ea5b5ffa41500a33fd9a6ab910d5d7757cf7cbbb0565cd3255c1c7e9125ee3d",
-    "alternate": "6ea5b5ffa41500a33fd9a6ab910d5d7757cf7cbbb0565cd3255c1c7e9125ee3d"
+    "hero": "0bd0e2f691771856c115f0a32d4a8c6a28bbb3621ef93b126e3315c787f8b369",
+    "detail": "24c3369f37d53be48210ec8980a1f4e51c7ca6d5325b8c7858e6093431ea8cf8",
+    "alternate": "24c3369f37d53be48210ec8980a1f4e51c7ca6d5325b8c7858e6093431ea8cf8"
   },
   "scale": 1,
   "format": "story",
